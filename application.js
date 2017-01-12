@@ -3,7 +3,7 @@ var express = require('express');
 var mbaasExpress = mbaasApi.mbaasExpress();
 var cors = require('cors');
 
-require('./lib/util/metrics');
+var metrics = require('./lib/util/metrics');
 
 // list the endpoints which you want to make securable here
 var securableEndpoints;
@@ -13,6 +13,10 @@ var app = express();
 
 // Enable CORS for all requests
 app.use(cors());
+
+if(metrics.middleware){
+  app.use(metrics.middleware);
+}
 
 // Note: the order which we add middleware to Express here is important!
 app.use('/sys', mbaasExpress.sys(securableEndpoints));
