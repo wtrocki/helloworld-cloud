@@ -3,6 +3,8 @@ var express = require('express');
 var mbaasExpress = mbaasApi.mbaasExpress();
 var cors = require('cors');
 
+require('./lib/util/metrics');
+
 // list the endpoints which you want to make securable here
 var securableEndpoints;
 securableEndpoints = ['/hello'];

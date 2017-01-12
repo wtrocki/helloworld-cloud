@@ -23,3 +23,13 @@ This is a blank 'hello world' FeedHenry MBaaS. Use it as a starting point for bu
             {
               "msg": "Hello world"
             }
+
+# Metrics support
+
+   > METRICS_HOST
+   
+   hostname of the influxdb service
+  
+   > METRICS_PORT
+   
+   influxdb port
