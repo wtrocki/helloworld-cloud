@@ -5,7 +5,8 @@
     "body-parser": "~1.0.2",
     "cors": "~2.2.0",
     "express": "~4.0.0",
-    "fh-mbaas-api": "wtrocki/fh-mbaas-api#monitoring",
+    "fh-mbaas-api": "6.1.3",
+    "fh-mbaas-api-metrics": "wtrocki/fh-mbaas-api#monitoring",
     "request": "~2.40.0"
   },
   "devDependencies": {
